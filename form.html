@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>T110ADK - Dark</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="XYZ123">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.css">
+    <!-- Google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" rel="stylesheet">
+    <!-- quill css -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <!--  summernote css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/css/dropzone.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <!-- <script src="public/ckeditor/ckeditor.js"></script> -->
+    
+</head>
+<body>
+<header class="header">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">ADK Dark</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-caret-down"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mobile-menu">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> | Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html"><i class="far fa-clipboard"></i> | Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chart.html"><i class="far fa-chart-bar"></i> | Chart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html"><i class="far fa-list-alt"></i> | Table</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-user"></i> | Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-comment"></i> | Message</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-images"></i> | Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i> | Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-puzzle-piece"></i> | Components</a>
+        </li>  -->                       
+      </ul>
+      <form class="form-inline">
+        <input class="form-control rounded-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<div class="d-flex align-items-stretch">
+  <!-- sidebar -->
+  <div class="sidebar material-shadow">
+      <div class="sidebar-header d-flex align-items-center justify-content-around">
+        <div class="avatar">
+          <img class="img-fluid rounded-circle" src="public/img/ava.png" alt=""/>
+        </div>
+        <div class="title">
+          <h5>Thien Nguyen</h5>
+          <p>Web Developer</p>
+        </div>
+      </div>
+      <span class="menu-heading">Page</span>
+      <div class="sidebar-menu">
+          <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> | Dashboard</a>
+          <a href="form.html" class="sidebar-link"><i class="far fa-clipboard"></i> | Form</a>
+          <a href="chart.html" class="sidebar-link"><i class="far fa-chart-bar"></i> | Chart</a>
+          <a href="table.html" class="sidebar-link"><i class="far fa-list-alt"></i> | Table</a>
+         <!--  <a href="" class="sidebar-link"><i class="far fa-user"></i> | Profile</a>
+          <a href="" class="sidebar-link"><i class="far fa-comment"></i> | Message</a>
+          <a href="" class="sidebar-link"><i class="far fa-images"></i> | Portfolio</a>
+          <a href="" class="sidebar-link"><i class="fas fa-mobile-alt"></i> | Contact</a>
+          <a href="" class="sidebar-link"><i class="fas fa-puzzle-piece"></i> | Components</a> -->
+      </div>   
+  </div>
+  <!-- end sidebar -->
+  <!-- page content -->
+  <div class="page-content">
+    <!-- page header -->
+    <section class="page-header block material-shadow">   
+      <div class="container-fluid">
+        <h1 class="size-2">Form</h1>
+      </div>  
+    </section>
+    <!-- end page header -->
+    <section class="mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="block material-shadow">
+              <h3>Basic form</h3>
+              <p class="second-color">Ullamcorper molestiae diamlorem luctus! Nec, interdum.</p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">Read policy carefully.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input class="form-check-input checkbox-radio-input" type="checkbox" id="input-1">
+                  <label for="input-1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-outline-warning">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="block material-shadow">
+              <h3>Horizontal form</h3>
+              <p class="second-color">Lorem ipsum dolor sit amet consectetur.</p>
+              <form class="form-horizontal">
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Email</label>
+                  <div class="col-sm-9">
+                    <input id="inputHorizontalSuccess" type="email" placeholder="Email Address" class="form-control form-control-success"><small class="form-text text-muted">Example help text that remains unchanged.</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Password</label>
+                  <div class="col-sm-9">
+                    <input id="inputHorizontalWarning" type="password" placeholder="Pasword" class="form-control form-control-warning"><small class="form-text text-muted">Example help text that remains unchanged.</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3">Checkbox</div>
+                  <div class="col-sm-9">
+                    <div class="form-check">
+                      <input class="form-check-input checkbox-radio-input" type="checkbox" id="chk-1">
+                      <label for="chk-1">Check me out</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">       
+                  <div class="col-sm-9 offset-sm-3">
+                    <input type="submit" value="Log In" class="btn btn-outline-info">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="block material-shadow">
+              <h3>Inline form</h3>
+              <p class="second-color">Lorem ipsum dolor sit amet consectetur.</p>
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-3">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                  </div>
+                  <div class="col-4">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-check mb-2 ml-3">
+                      <input class="form-check-input checkbox-radio-input" type="checkbox" id="chk-2">
+                      <label for="chk-2">Check me out</label>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-outline-danger mb-2">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="block material-shadow">
+              <h3>All form elements</h3>
+              <form class="form-horizontal">
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Normal</label>
+                  <div class="col-sm-9">
+                     <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Help text</label>
+                  <div class="col-sm-9">
+                     <input type="text" class="form-control"><small class="help-block-none">A block of help text that breaks onto a new line and may extend beyond one line.</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Password</label>
+                  <div class="col-sm-9">
+                     <input type="password" name="password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Placeholder</label>
+                  <div class="col-sm-9">
+                     <input type="text" placeholder="placeholder" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Disabled</label>
+                  <div class="col-sm-9">
+                     <input type="text" disabled="" placeholder="Disabled input here..." class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Radios <br><small class="text-primary">Normal elements</small></label>
+                  <div class="col-sm-9">
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" name="radio" type="radio" id="radio-1">
+                      <label for="radio-1">Corporis mus porta non sociosqu, suscipit, sint.</label>
+                    </div>
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" name="radio" type="radio" id="radio-2">
+                      <label for="radio-2">Corporis mus porta non sociosqu, suscipit, sint.</label>
+                    </div>
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" name="radio" type="radio" id="radio-3">
+                      <label for="radio-3">Corporis mus porta non sociosqu, suscipit, sint.</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Inline checkboxes</label>
+                  <div class="col-sm-9">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input checkbox-radio-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input checkbox-radio-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input checkbox-radio-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox3">Option 3</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Checkboxes &amp; radios <br><small class="text-primary">Custom elements</small></label>
+                  <div class="col-sm-9">
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" type="checkbox" id="chk-3">
+                      <label for="chk-3">Checkbox Corporis mus porta non sociosqu</label>
+                    </div>
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" disabled type="checkbox" id="chk-4">
+                      <label for="chk-4">Checkbox disable Corporis mus porta non sociosqu</label>
+                    </div>
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" name="rd" type="radio" id="rd-1">
+                      <label for="rd-1">Radio 1  Corporis mus porta non sociosqu</label>
+                    </div>
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" name="rd" type="radio" id="rd-2">
+                      <label for="rd-2">Radio 1 Corporis mus porta non sociosqu</label>
+                    </div>
+                    <div class="checkbox-radio-block">
+                      <input class="form-check-input checkbox-radio-input" disabled type="radio" id="rd-3">
+                      <label for="rd-3">Radio disable Corporis mus porta non sociosqu</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label" for="exampleFormControlSelect1">Select</label>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3" for="exampleFormControlSelect2">Multi Select</label>
+                  <div class="col-sm-9">
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>                 
+                <div class="form-group row has-success">
+                  <label class="col-sm-3 form-control-label">Input with success</label>
+                  <div class="col-sm-9">
+                     <input type="text" class="form-control is-valid">
+                  </div>
+                </div>
+                <div class="form-group row has-danger">
+                  <label class="col-sm-3 form-control-label">Input with error</label>
+                  <div class="col-sm-9">
+                     <input type="text" class="form-control is-invalid">
+                     <div class="invalid-feedback">Please provide your name.</div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Control sizing</label>
+                  <div class="col-sm-9">
+                     <div class="form-group">
+                        <input type="text" placeholder=".input-lg" class="form-control form-control-lg">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" placeholder="Default input" class="form-control">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" placeholder=".input-sm" class="form-control form-control-sm">
+                     </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Column sizing</label>
+                  <div class="col-sm-9">
+                     <div class="row">
+                        <div class="col-md-3">
+                           <input type="text" placeholder=".col-md-3" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                           <input type="text" placeholder=".col-md-4" class="form-control">
+                        </div>
+                        <div class="col-md-5">
+                           <input type="text" placeholder=".col-md-5" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Input groups</label>
+                  <div class="col-sm-9">
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend"><span class="input-group-text">@</span></div>
+                           <input type="text" placeholder="Username" class="form-control">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <input type="text" class="form-control">
+                           <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                           <input type="text" class="form-control">
+                           <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                 <input type="checkbox">
+                              </div>
+                           </div>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                 <input type="radio">
+                              </div>
+                           </div>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Button addons</label>
+                  <div class="col-sm-9">
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <button type="button" class="btn btn-outline-secondary">Go!</button>
+                           </div>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <input type="text" class="form-control">
+                           <div class="input-group-append">
+                              <button type="button" class="btn btn-outline-secondary">Go!</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">With dropdowns</label>
+                  <div class="col-sm-9">
+                     <div class="input-group">
+                        <div class="input-group-prepend">
+                           <button data-toggle="dropdown" type="button" class="btn btn-outline-secondary dropdown-toggle">Action <span class="caret"></span></button>
+                           <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">Action</a>
+                              <a href="#" class="dropdown-item">Another action</a>
+                              <a href="#" class="dropdown-item">Something else here</a>
+                              <a href="#" class="dropdown-item">Separated link</a>
+                           </div>
+                        </div>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+                </div>
+                <!-- quill js -->
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">QuillJS Text Editor</label>
+                  <div class="col-sm-9 ml-auto">
+                    <div id="editor" style="height: 300px;"></div>
+                    <!-- quill js config -->
+                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+                    <script src="public/js/quill-config.js"></script>
+                  </div>
+                </div> 
+                <!-- summernote -->
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">Summernote Text Editor</label>
+                  <div class="col-sm-9 ml-auto">
+                    <div id="summernote" style="height: 300px;"></div>
+                  </div>
+                </div>  
+                <!-- ckeditor -->
+                <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">File input</label>
+                  <div class="col-sm-9 ml-auto">
+                    <div class="file-field input-field">
+                      <div class="btn btn-dark">
+                          <span>File</span>
+                          <input type="file" multiple="">
+                      </div>
+                      <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <!-- <div class="form-group row">
+                  <label class="col-sm-3 form-control-label">CKEditor Text Editor</label>
+                  <div class="col-sm-9 ml-auto">
+                    <textarea name="content" id="CKeditor"></textarea>
+                    <script>
+                      CKEDITOR.replace( 'CKeditor' );
+                    </script>
+                  </div>
+                </div>   -->
+<!--                 <div lass="form-group row">
+                  <label class="col-sm-3 form-control-label">Dropzone</label>
+                  <div class="col-sm-9 ml-auto">
+                    <form id="upload-widget" method="post" action="/upload" class="dropzone">
+                      <div class="fallback">
+                        <input name="file" type="file" />
+                      </div>
+                    </form>
+                  </div>
+                </div>   -->
+                <div class="form-group row">
+                <label class="col-sm-3 form-control-label">Buttons</label>
+                <div class="col-sm-9 ml-auto">
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-success">Sucess</button>
+                  <button type="button" class="btn btn-danger">Danger</button>
+                  <button type="button" class="btn btn-info">Info</button>
+                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button type="button" class="btn btn-dark">Dark</button>
+                  <button type="button" class="btn btn-secondary">Secondary</button>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-sm-3 form-control-label">Outline buttons</label>
+                <div class="col-sm-9 ml-auto">
+                  <button type="button" class="btn btn-outline-primary">Primary</button>
+                  <button type="button" class="btn btn-outline-success">Sucess</button>
+                  <button type="button" class="btn btn-outline-danger">Danger</button>
+                  <button type="button" class="btn btn-outline-info">Info</button>
+                  <button type="button" class="btn btn-outline-warning">Warning</button>
+                  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                </div>
+                </div>                 
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="mt-3">
+      <div class="block material-shadow footer">
+        <div class="container-fluid text-right">
+          <p >2018 © Personal License. Designed by Thien Nguyen.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </div>
+  <!-- end page content -->
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!-- <script src="public/js/my-chart.js"></script> -->
+    <!-- quill js config -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
+    <script src="public/js/summernote-config.js"></script>
+    <!-- <script src="public/js/dropzone.js"></script> -->
+
+</body>
+</html>
